@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Perfil do Usuário</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="perfil.css"> <!-- Estilo específico para o perfil -->
+</head>
+<body>
+
+  <div class="container">
+    <h2>Perfil do Usuário</h2>
+    
+    <!-- Foto de perfil -->
+    <div class="profile-info">
+      <div id="profile-pic" class="happy-face">😊</div>
+      <br>
+    </div>
+
+    <!-- Nome e Email -->
+    <div class="profile-info">
+      <input type="text" id="user-name" placeholder="Seu nome">
+      <input type="email" id="user-email" placeholder="Seu e-mail">
+    </div>
+
+    <!-- Botões clicáveis -->
+    <button onclick="updateProfile()">Salvar Alterações</button>
+    <button onclick="logout()">Sair</button>
+    <button onclick="deleteAccount()">Deletar Conta</button>
+  </div>
+
+  <!-- Firebasezin -->
+  <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-storage-compat.js"></script>
+  <script src="firebase-config.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
