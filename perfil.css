@@ -1,29 +1,51 @@
 /* perfil.css */
 body {
-    background-color: #f4f4f4;
+    background: #3674be; /* Cor de fundo semelhante à outra página */
+    min-height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: Arial, sans-serif;
     text-align: center;
-  }
-  
-  .container {
+    transition: all 1s ease; /* Para transição suave */
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 700px;
+    height: 700px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    filter: blur(200px); /* Efeito de desfoque */
+    z-index: 0;
+}
+
+.container {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  h2 {
+    position: relative; /* Para garantir que a caixa fique acima do fundo */
+    z-index: 1;
+}
+
+h2 {
     font-size: 24px;
     color: #333;
-  }
-  
-  .profile-info {
+}
+
+.profile-info {
     margin-bottom: 20px;
-  }
-  
-  #profile-pic {
+}
+
+#profile-pic {
     font-size: 100px;
     border-radius: 50%;
     width: 120px;
@@ -32,17 +54,17 @@ body {
     background-color: #ffdd57;
     color: #fff;
     margin: 0 auto;
-  }
-  
-  input[type="text"], input[type="email"] {
+}
+
+input[type="text"], input[type="email"] {
     width: 80%;
     padding: 10px;
     margin: 10px 0;
     border-radius: 5px;
     border: 1px solid #ccc;
-  }
-  
-  button {
+}
+
+button {
     padding: 10px 20px;
     margin: 10px 5px;
     background-color: #4CAF50;
@@ -50,9 +72,8 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-  }
-  
-  button:hover {
+}
+
+button:hover {
     background-color: #45a049;
-  }
-  
+}

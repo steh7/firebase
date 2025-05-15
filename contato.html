@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FIREBASE SITE</title>
+    <link rel="stylesheet" href="contato.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="logo">TESTE DE FIREBASE</div>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="produtos.html">Início</a></li>
+            </ul>
+            <a href="index.html" class="login-icon" title="Login">
+                <i class="bx bx-user"></i>
+            </a>
+        </nav>
+    </header>
+
+    <!-- Contato Section com Box -->
+    <section class="contato" id="contato">
+        <div class="contato-box"> <!-- Box que envolve todo o conteúdo -->
+            <h2>Entre em Contato Conosco</h2>
+            <div class="contato-content">
+                <p>
+                    Se você tem dúvidas sobre nossos produtos, quer saber mais sobre nossa empresa ou
+                    precisa de ajuda, estamos à disposição! Utilize o formulário abaixo ou entre em contato 
+                    diretamente conosco pelos nossos canais.
+                </p>
+
+                <h3>Apresentação da Empresa</h3>
+                <p class="empresa-texto">
+                    Fundada em 2015, a **Firebase Inc.** é uma empresa que revolucionou o mercado de tecnologia e inovação. 
+                    Nossa missão é criar soluções tecnológicas inovadoras que impactem positivamente a vida das pessoas e empresas. 
+                    Desde o começo, buscamos oferecer produtos de alta qualidade, com design moderno e funcionalidade excepcional. 
+                    Trabalhamos com um time altamente qualificado e apaixonado pelo que faz, sempre com um olhar voltado para a inovação 
+                    e o futuro. 
+                </p>
+                <p class="empresa-texto">
+                    Ao longo dos anos, conquistamos a confiança de milhares de clientes e somos líderes em nosso segmento. 
+                    Nosso portfólio de produtos abrange desde dispositivos eletrônicos de alta performance até softwares 
+                    especializados, sempre com a preocupação de entregar um excelente custo-benefício e garantir a satisfação dos nossos clientes. 
+                    Acreditamos que a inovação é a chave para o progresso, por isso, estamos constantemente buscando novas maneiras de melhorar 
+                    a experiência dos nossos usuários e contribuir para o desenvolvimento do mercado.
+                </p>
+                <p class="empresa-texto">
+                    Hoje, com mais de 50 mil clientes satisfeitos em todo o mundo, a **Firebase Inc.** continua sua jornada com o compromisso de 
+                    transformar a tecnologia em um aliado do bem-estar e do sucesso dos nossos parceiros. Nossa visão é ser a líder mundial 
+                    em soluções tecnológicas inovadoras até 2030, criando um impacto positivo em todas as indústrias em que atuamos.
+                </p>
+
+                <!-- Formulário de Contato -->
+                <form action="#" method="POST">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required />
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required />
+
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+                    <button type="submit">Enviar Mensagem</button>
+                </form>
+
+                <p>Ou entre em contato diretamente pelos nossos canais:</p>
+                <div class="contato-info">
+                    <p><i class="bx bx-phone"></i> +55 11 98765-4321</p>
+                    <p><i class="bx bx-envelope"></i> contato@firebaseinc.com</p>
+                </div>
+            </div>
+            
+            <!-- Redes Sociais -->
+            <div class="empresa-social">
+                <h3>Conecte-se Conosco</h3>
+                <p>Siga-nos nas redes sociais para novidades, promoções e muito mais!</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com" target="_blank">
+                        <i class="bx bxl-facebook"></i> Facebook
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <i class="bx bxl-instagram"></i> Instagram
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank">
+                        <i class="bx bxl-twitter"></i> Twitter
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="produtos.js"></script>
+</body>
+</html>

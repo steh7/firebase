@@ -177,64 +177,18 @@ a:hover {
     color: #7775ff;
 }
 
-/* Modal for password confirmation */
-#senha-modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
+/* Profile image (commented out as not used) */
+/*
+.profile-img {
+    display: block;
+    margin: 0 auto 20px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #3674be;
 }
-
-#senha-modal > div {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    max-width: 400px;
-    width: 100%;
-}
-
-#senha-modal input {
-    margin-bottom: 10px;
-    padding: 8px;
-    width: 100%;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background: #f9f9f9;
-}
-
-#senha-modal button {
-    margin-top: 10px;
-    padding: 12px 20px;
-    background: #3674be;
-    color: #fff;
-    border: none;
-    border-radius: 40px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-#senha-modal button:hover {
-    background: #1148be;
-}
-
-#senha-modal .close-modal {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 18px;
-    color: #000;
-    cursor: pointer;
-}
+*/
 
 /* Responsiveness */
 @media (max-width: 768px) {
@@ -269,4 +223,141 @@ a:hover {
         padding: 10px;
         font-size: 14px;
     }
+}
+
+
+/* Contato Box - Adicionando margem para afastar do Header */
+.contato-box {
+    padding: 40px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    margin: 40px auto 0; /* espaçamento de 40px em cima para afastar do header e não grudar*/
+}
+
+/* Ajeitando o conteúdo da seção para garantir que a página tenha espaçamento correto */
+.contato {
+    padding-top: 80px;
+}
+
+
+/* Textos de Apresentação da Empresa */
+.empresa-texto {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+form label {
+    font-size: 16px;
+    color: #333;
+}
+
+form input, form textarea {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+    font-size: 14px;
+    width: 100%;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #3674be;
+    box-shadow: 0 0 10px rgba(54, 116, 190, 0.3);
+    outline: none;
+}
+
+form button {
+    padding: 12px;
+    background: #3674be;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #1148be;
+}
+
+/* Informações de Contato */
+.contato-info {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contato-info p {
+    font-size: 16px;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.contato-info i {
+    font-size: 20px;
+    color: #3674be;
+}
+
+/* Centralizando o título "Conecte-se Conosco" */
+.empresa-social {
+    text-align: center;
+}
+
+/* Centralizando o título h3 da seção "Conecte-se Conosco" */
+.empresa-social h3 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+
+.empresa-social p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+/* Redes sociais */
+.social-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px; /*espaçamento entre os linkss*/
+    flex-wrap: wrap;
+}
+
+.social-links a {
+    display: inline-block;
+    color: #333;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #3674be;
+}
+
+.social-links a i {
+    margin-right: 8px;
 }
